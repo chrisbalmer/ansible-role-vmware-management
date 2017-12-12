@@ -1,0 +1,38 @@
+# Download locations:
+# https://kb.vmware.com/s/article/2089791
+
+- name: Install VMware vSphere Client 5.0U3
+  win_package:
+    path: http://vsphereclient.vmware.com/vsphereclient/1/3/0/0/6/0/0/VMware-viclient-all-5.0.0-1300600.exe
+    arguments: /s /w /v" /qn"
+    product_id: '{04805AB6-F757-496A-8D56-37A0FC5FF6F3}'
+    state: present
+
+
+- name: Install VMware vSphere Client 5.1U2a
+  win_package:
+    path: http://vsphereclient.vmware.com/vsphereclient/1/8/8/0/9/0/6/VMware-viclient-all-5.1.0-1880906.exe
+    arguments: /s /w /v" /qn"
+    product_id: '{09DC364B-A77A-49A0-972B-E43F0DACC5E3}'
+    state: present
+
+
+- name: Install VMware vSphere Client 5.5U3e
+  win_package:
+    path: http://vsphereclient.vmware.com/vsphereclient/4/0/3/2/3/6/5/VMware-viclient-all-5.5.0-4032365.exe
+    arguments: /s /w /v" /qn"
+    product_id: '{4CFB0494-2E96-4631-8364-538E2AA91324}'
+    state: present
+
+
+- name: Install VMware vSphere Client 6.0U3
+  win_package:
+    path: http://vsphereclient.vmware.com/vsphereclient/5/1/1/2/5/0/8/VMware-viclient-all-6.0.0-5112508.exe
+    arguments: /s /w /v" /qn"
+    product_id: '{593390AC-CACE-4278-AA77-350012BF10B1}'
+    state: present
+
+- name: Install Chrome
+  win_chocolatey:
+    name: googlechrome
+    state: present
