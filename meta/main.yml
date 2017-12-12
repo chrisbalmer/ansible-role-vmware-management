@@ -1,0 +1,13 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: chrisbalmer
+  description: Simple Ansible role to deploy VMware vSphere clients.
+  company: "chrisbalmer"
+  license: "license (MIT)"
+  min_ansible_version: 2.4.2
+  platforms:
+    - name: Windows
+      versions:
+      - 10
